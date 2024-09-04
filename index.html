@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+              anek: ["Anek Devanagari"],
+            },
+            boxShadow: {
+              left: "-40px 30px 80px -20px rgba(0, 0, 0, 0.5)",
+            },
+            colors: {
+              violet: {
+                750: "#3f03b6",
+              },
+            },
+            screens: {
+              xsm: "320px",
+              medium: "690px",
+              xmd: "900px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <section class="container lg:max-w-md h-screen bg-violet-900 py-9 xsm:bg-slate-50 md:bg-violet-900 md:max-w-44 md:gap-10 lg:gap-24 loginPage">
+      <div class="xsm:hidden md:ml-28 lg:ml-80 w-[19rem] h-5/6 bg-white rounded-3xl shadow-left medium:ml-5 medium:block">
+        <h1 class="text-center font-inter font-bold text-xl pt-14 pb-7 px-3">
+          Welcome to <span class="text-3xl font-extrabold italic bg-gradient-to-tr from-violet-900 via-pink-500 to-sky-600 bg-clip-text text-transparent">JannahWear</span>
+        </h1>
+        <img src="./images/muslimah.png" alt="" />
+        <div class="flex justify-between">
+          <p class="py-20 mx-10 text-base font-anek font-regular w-44">Explore your preferred syar'i outfit!!!<i class="material-symbols-outlined ml-2 line-clamp-1 text-[3rem]">swipe_up</i></p>
+          <span class="w-10 h-20 my-20 rounded-l-full bg-violet-750 material-symbols-outlined text-white font-thin text-[2.25rem] py-5"> arrow_right_alt</span>
+        </div>
+      </div>
+      <div class="w-[19rem] shadow-left my-10 rounded-3xl xsm:mx-7 sm:mx-auto xsm:block bg-white login">
+        <div class="w-full bg-violet-750 h-5/6 rounded-t-3xl rounded-b-[120px]">
+          <span class="material-symbols-outlined mx-32 text-[3rem] mt-7 font-medium text-slate-50"> account_circle </span>
+          <h1 class="font-bold text-slate-50 h-15 w-72 font-inter text-2xl pt-3 px-7">Holaaa!</h1>
+          <p class="h-15 px-7 w-full text-slate-50 font-inter pb-5">Login first to explore</p>
+          <form action="">
+            <label for="email">
+              <span class="py-36 mx-7 text-slate-50 font-inter after:content-['*'] after:text-pink-500 after:px-0.5">Email</span>
+              <input
+                type="email"
+                id="email"
+                placeholder="user@jannahwear.com"
+                autocomplete="off"
+                required
+                class="w-5/6 mx-7 py-1 px-3 shadow rounded-lg block text-sm font-inter mb-7 placeholder:text-slate-400 focus:outline-violet-700 invalid:text-red-600 invalid:focus:outline-red-600"
+              />
+            </label>
+            <label for="password">
+              <span class="py-36 mx-7 text-slate-50 font-inter after:content-['*'] after:text-pink-500 after:px-0.5">Password</span>
+              <input type="password" id="password" autocomplete="off" required class="w-5/6 mx-7 py-1 px-3 shadow rounded-lg block text-sm font-inter focus:outline-violet-700" />
+            </label>
+            <button type="button" class="h-14 w-14 rounded-full mx-[7.75rem] mt-10 font-inter text-slate-50 bg-indigo-600 hover:bg-indigo-700 active:bg-[#392fb5]">
+              <span class="material-symbols-outlined text-3xl font-thin pt-1">arrow_right_alt</span>
+            </button>
+            <p class="text-slate-50 font-inter text-sm text-center w-52 mx-auto mt-2">Don't have an account yet? <a id="registerLink" href="#" class="text-sky-400 underline">Register</a></p>
+          </form>
+        </div>
+        <h1 class="text-center my-8 text-3xl font-extrabold italic bg-gradient-to-tr from-violet-900 via-pink-500 to-sky-600 bg-clip-text text-transparent font-inter">JannahWear</h1>
+      </div>
+    </section>
+    <section class="max-w-[33rem] h-[33rem] bg-violet-900 font-inter rounded-br-full text-slate-50 py-2 md:space-x-36 registPage">
+      <div class="w-full h-full xsm:hidden xmd:block">
+        <h1 class="text-7xl font-extrabold mt-10 mx-10 tracking-widest">Welcome</h1>
+        <h3 class="text-2xl font-bold ml-[15.25rem] tracking-wide">Sisters Fillah</h3>
+        <p class="text-base font-light mx-10 mt-16 max-w-sm">
+          this is a website for our sisters fillah who like to wear clothes according to religious law. Register yourself first so that you can search for syar'i clothes that are in accordance with the recommendations of your religion.
+        </p>
+      </div>
+      <div class="w-[19rem] h-[85%] shadow-2xl mt-28 rounded-md space xsm:mx-auto bg-white ring-1 ring-slate-750">
+        <div class="w-full h-full">
+          <h1 class="font-bold text-slate-900 h-15 w-72 font-inter text-2xl pt-3 px-7 text-center">Sign Up Now</h1>
+          <p class="text-slate-900 font-inter text-sm text-center mb-5">Already have an account? <a id="loginLink" href="#" class="text-sky-400 underline">Login</a></p>
+          <form action="">
+            <label for="email">
+              <span class="py-36 mx-7 text-sm text-slate-900 font-inter after:content-['*'] after:text-pink-500 after:px-0.5">Email</span>
+              <input
+                type="email"
+                id="email"
+                placeholder="user@jannahwear.com"
+                autocomplete="off"
+                required
+                class="w-5/6 mx-7 py-1 px-3 shadow rounded-lg block text-sm font-inter mb-2 placeholder:text-slate-400 focus:outline-violet-700 text-slate-900 ring-1 ring-violet-750"
+              />
+            </label>
+            <label for="password">
+              <span class="py-36 mx-7 text-sm text-slate-900 font-inter after:content-['*'] after:text-pink-500 after:px-0.5">Password</span>
+              <input type="password" id="password" autocomplete="off" required class="w-5/6 mx-7 py-1 px-3 mb-2 shadow rounded-lg block text-sm font-inter focus:outline-violet-700 ring-1 ring-violet-750 text-slate-900" />
+            </label>
+            <label for="password-confirm">
+              <span class="py-36 mx-7 text-sm text-slate-900 font-inter after:content-['*'] after:text-pink-500 after:px-0.5">Confirm Password</span>
+              <input type="password" id="password-confirm" autocomplete="off" required class="w-5/6 mx-7 py-1 px-3 shadow rounded-lg block text-sm font-inter focus:outline-violet-700 ring-1 ring-violet-750 text-slate-900" />
+            </label>
+            <p class="text-slate-900 text-xs text-center m-2 font-inter">
+              By signing up you agree to JannahWear's <span class="text-violet-750 font-medium">Terms of Service</span> & <span class="text-violet-750 font-medium"> Privacy Policy</span>
+            </p>
+            <button type="button" class="rounded-md ml-[4.50rem] py-2 px-12 mt-5 font-inter text-slate-50 bg-violet-600 hover:bg-violet-700 active:bg-violet-750 text-sm font-semibold">Sign Up</button>
+          </form>
+          <div class="w-full flex text-slate-500 space-x-4 my-4 border-t-2 border-violet-200 py-3">
+            <a href="#"><i class="fa-brands fa-facebook text-slate-50 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 py-2 px-14 ml-2 rounded-md"></i></a>
+            <a href="#"><i class="fa-brands fa-google text-slate-50 bg-red-600 hover:bg-red-700 active:bg-red-800 py-2 px-14 rounded-md"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Set initial visibility
+      document.addEventListener("DOMContentLoaded", function () {
+        const login = document.querySelector(".loginPage");
+        const regist = document.querySelector(".registPage");
+
+        // Ensure login page is visible and registration page is hidden on page load
+        login.classList.add("medium:flex");
+        regist.classList.add("hidden");
+      });
+
+      document.getElementById("registerLink").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const login = document.querySelector(".loginPage");
+        const regist = document.querySelector(".registPage");
+
+        // Hide login page and show registration page
+        login.classList.add("hidden");
+        login.classList.remove("medium:flex");
+        regist.classList.remove("hidden");
+        regist.classList.add("md:flex");
+      });
+
+      document.getElementById("loginLink").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const login = document.querySelector(".loginPage");
+        const regist = document.querySelector(".registPage");
+
+        // Hide registration page and show login page
+        regist.classList.add("hidden");
+        regist.classList.remove("md:flex");
+        login.classList.remove("hidden");
+        login.classList.add("medium:flex");
+      });
+    </script>
+  </body>
+</html>
